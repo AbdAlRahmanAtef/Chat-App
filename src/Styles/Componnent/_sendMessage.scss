@@ -1,0 +1,35 @@
+.form {
+  width: 100%;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    align-items: center;
+  }
+  .input, button {
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+  }
+  .input {
+    background: $dark;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    width: 85%;
+  }
+  button {
+    background-color: $mainColor;
+    font-size: 20px;
+    color: $light;
+    width: 100px;
+    padding: 0 15px;
+    border-radius: 20px;
+    width: 100px;
+    cursor: pointer;
+  }
+}

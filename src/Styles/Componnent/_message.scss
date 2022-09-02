@@ -1,0 +1,53 @@
+.messages {
+  overflow: hidden;
+  &:last-child {
+    margin-bottom: 100px;
+  }
+  .container {
+    display: flex;
+    .message {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+      .name {
+        width: fit-content;
+        color: gray;
+        font-size: 18px;
+        top: 0;
+        font-weight: 600;
+      }
+      .message-content {
+        max-width: 300px;
+        padding: 5px 15px;
+        min-height: 30px;
+        word-break: break-all;
+        width: fit-content;
+        background-color: $light;
+        box-shadow: 0 0 10px #ccc;
+        font-size: 18px;
+        border-radius: 0 20px 20px;
+      }
+      &.recived {
+        width: fit-content;
+        margin-top: 20px;
+      }
+      &.send {
+        text-align: end;
+        margin-left: auto;
+        float: right;
+        align-items: flex-end;
+        .message-content {
+          background-color: $mainColor;
+          border-radius: 20px 20px 0;
+          color: $light;
+        }
+        .name {
+          right: 0;
+          top: -30px;
+        }
+      }
+    }
+  }
+}

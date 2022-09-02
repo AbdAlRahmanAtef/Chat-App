@@ -1,0 +1,13 @@
+@import "./Helpers/variable";
+@import "./Layout/grid";
+@import "./Componnent/navbar";
+@import "./Componnent/message";
+@import "./Componnent/sendMessage";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
